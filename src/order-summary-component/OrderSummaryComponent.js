@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import "./OrderSummaryComponent.css";
 import illustrationHero from "./assets/illustration-hero.svg";
+import iconMusic from "./assets/icon-music.svg";
 
 const OrderSummaryComponent = () => {
 	return (
@@ -46,16 +47,25 @@ const OrderSummaryComponent = () => {
 							on any device anywhere you like!
 						</p>
 					</div>
-          <div className="plan-details">
+					<div className="plan-details">
+						<div className="icon-plan">
+							<img src={iconMusic} alt="Music Icon" className="icon-music" />
+							<div className="plan-rate-details">
+								<div className="plan-rate-title">
+									Annual Plan
+								</div>
+								<div className="plan-rate-price">
+									$59.99/year
+								</div>
+							</div>
+						</div>
+						<div className="change">
+							<div>Change</div>
+						</div>
+					</div>
 
-          </div>
-
-          <button className="payment-btn">
-            Proceed to Payment
-          </button>
-          <button className="cancel-order">
-            Cancel Order
-          </button>
+					<button className="payment-btn">Proceed to Payment</button>
+					<button className="cancel-order">Cancel Order</button>
 				</div>
 			</div>
 		</>
